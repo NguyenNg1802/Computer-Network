@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context="com.example.nguyen.locationtracker.MainActivity"
+    tools:ignore="ExtraText"><![CDATA[
+
+    tools:layout_editor_absoluteX="108dp"
+    tools:layout_editor_absoluteY="29dp" />
+    ]]>
+
+    <Button
+        android:id="@+id/button_start"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_alignBottom="@+id/button_stop"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/button_stop"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:text="Start tracking" />
+
+    <Button
+        android:id="@+id/button_stop"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/imageButton"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:text="Stop tracking" />
+
+    <TextView
+        android:id="@+id/Latitude_label"
+        android:layout_width="wrap_content"
+        android:layout_height="40sp"
+        android:layout_alignLeft="@+id/button_start"
+        android:layout_alignStart="@+id/button_start"
+        android:layout_below="@+id/button_start"
+        android:layout_marginTop="33dp"
+        android:text="Latitude"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/x"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_alignBaseline="@+id/Latitude_label"
+        android:layout_alignBottom="@+id/Latitude_label"
+        android:layout_alignEnd="@+id/button_stop"
+        android:layout_alignRight="@+id/button_stop"
+        android:background="#9E9E9E"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/Longitude_label"
+        android:layout_width="wrap_content"
+        android:layout_height="40sp"
+        android:layout_alignLeft="@+id/Latitude_label"
+        android:layout_alignStart="@+id/Latitude_label"
+        android:layout_below="@+id/Latitude_label"
+        android:layout_marginTop="33dp"
+        android:text="Longitude"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/y"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/x"
+        android:layout_alignStart="@+id/x"
+        android:layout_alignTop="@+id/Longitude_label"
+        android:background="#9E9E9E"
+        android:textSize="17sp" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/button_stop"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/button_stop"
+        app:srcCompat="@android:drawable/ic_lock_power_off" />
+
+    <TextView
+        android:id="@+id/z"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/y"
+        android:layout_alignStart="@+id/y"
+        android:layout_below="@+id/y"
+        android:layout_marginTop="36dp"
+        android:background="#9E9E9E"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/Address_label"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignBaseline="@+id/z"
+        android:layout_alignBottom="@+id/z"
+        android:layout_alignLeft="@+id/Longitude_label"
+        android:layout_alignStart="@+id/Longitude_label"
+        android:text="Address"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/Speed_label"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/Address_label"
+        android:layout_alignStart="@+id/Address_label"
+        android:layout_alignTop="@+id/s"
+        android:text="Speed"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/s"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/z"
+        android:layout_alignStart="@+id/z"
+        android:layout_below="@+id/z"
+        android:layout_marginTop="35dp"
+        android:background="#9E9E9E"
+        android:textSize="17sp" /><![CDATA[
+
+    />
+
+]]>
+</RelativeLayout>
